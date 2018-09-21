@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PwrDialog</class>
+ <widget class="QDialog" name="PwrDialog">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>595</width>
+    <height>228</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Remote Power Controller</string>
+  </property>
+  <property name="accessibleDescription">
+   <string extracomment="On/Off Power Dialog Box"/>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>20</y>
+     <width>211</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Juice</string>
+   </property>
+   <widget class="QCheckBox" name="checkBoxPwr1">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Power Socket 1</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBoxPwr2">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>60</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Power Socket 2</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBoxPwr3">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>90</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Power Socket 3</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBoxPwr4">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>120</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Power Socket 4</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>190</y>
+     <width>51</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Status:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="connectButton">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>190</y>
+     <width>83</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Connect!</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>20</y>
+     <width>321</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Net</string>
+   </property>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Net Device:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>120</y>
+      <width>281</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>fe80:0000:0000:0000:0204:a3ff:fe28:020c</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>100</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Target address:</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLineEdit" name="lineEditStat">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>190</y>
+     <width>381</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Not Connected</string>
+   </property>
+   <property name="maxLength">
+    <number>71</number>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
